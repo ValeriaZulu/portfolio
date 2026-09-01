@@ -39,7 +39,7 @@ function ProjectsPreview() {
     return (
         <section
             id="projects"
-            className="relative px-6 py-24 sm:py-32"
+            className="relative px-6 py-18 sm:py-18"
         >
             <div className="mx-auto max-w-6xl">
                 {/* Section heading */}

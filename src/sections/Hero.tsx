@@ -2,7 +2,7 @@ function Hero() {
     return (
         <section
             id="home"
-            className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24"
+            className="relative flex min-h-screen items-center overflow-hidden px-6 pt-5"
         >
             {/* Decorative glow */}
             <div

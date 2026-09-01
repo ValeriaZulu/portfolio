@@ -26,6 +26,13 @@ function Navbar() {
                     </a>
 
                     <a
+                        href="#education"
+                        className="transition-colors duration-300 hover:text-[#c99cff]"
+                    >
+                        Education
+                    </a>
+
+                    <a
                         href="#contact"
                         className="transition-colors duration-300 hover:text-[#c99cff]"
                     >
