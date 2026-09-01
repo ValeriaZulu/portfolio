@@ -55,4 +55,63 @@ export const projects: Project[] = [
         featured: true,
         category: 'collaborative',
     },
+    {
+        title: 'RECO',
+        description:
+            'Academic movie and series recommendation application developed as an initial exploration of the project using SpecKit.',
+        technologies: ['JavaScript', 'SpecKit'],
+        githubUrl: 'https://github.com/ValeriaZulu/RECO',
+        featured: false,
+        category: 'academic',
+    },
+
+    {
+        title: 'RECO-DDD',
+        description:
+            'A second iteration of RECO focused on software architecture and Domain-Driven Design rather than visual development.',
+        technologies: ['C#', '.NET', 'DDD', 'PostgreSQL', 'Docker'],
+        githubUrl: 'https://github.com/ValeriaZulu/RECO-DDD',
+        featured: false,
+        category: 'academic',
+    },
+
+    {
+        title: 'Alquiler de Objetos DDD',
+        description:
+            'Academic project inspired by rental platforms, developed to explore Domain-Driven Design concepts and software architecture.',
+        technologies: ['C#', '.NET', 'DDD'],
+        githubUrl: 'https://github.com/Miguearisti14/AlquilerObjetos_DDD',
+        featured: false,
+        category: 'collaborative',
+    },
+    {
+        title: 'Go Travel',
+        description:
+            'Interactive travel website featuring an image slider, gallery, contact form, language switching, dark mode and client-side authentication.',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'esbuild'],
+        githubUrl: 'https://github.com/ValeriaZulu/Taller2',
+        demoUrl: 'https://valeriazulu.github.io/Taller2/',
+        featured: false,
+        category: 'academic',
+    },
+
+    {
+        title: 'P2P File Sharing System',
+        description:
+            'Distributed and decentralized file-sharing system using REST and gRPC microservices, with Docker support and fault tolerance.',
+        technologies: ['Python', 'REST', 'gRPC', 'Docker', 'Microservices'],
+        githubUrl: 'https://github.com/ValeriaZulu/taller_p2p',
+        featured: false,
+        category: 'academic',
+    },
+
+    {
+        title: 'IoT End Device',
+        description:
+            'IoT end device based on a LILYGO LoRa 32 for measuring temperature, obtaining GPS position and transmitting data through LoRa.',
+        technologies: ['C++', 'LoRa', 'GPS', 'IoT'],
+        githubUrl: 'https://github.com/ValeriaZulu/IoT_EndDevices',
+        featured: false,
+        category: 'academic',
+    },
 ]
