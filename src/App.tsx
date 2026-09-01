@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToHash from './components/ScrollToHash'
 
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -11,6 +12,7 @@ import Education from './sections/Education'
 import Contact from './sections/Contact'
 
 import Projects from './pages/Projects'
+import { LanguageProvider } from './i18n/LanguageContext'
 
 function Home() {
   return (
@@ -26,17 +28,20 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToHash />
-      <Navbar />
+    <LanguageProvider>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <BrowserRouter>
+        <ScrollToHash />
+        <Navbar />
 
-      <Footer />
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }
 

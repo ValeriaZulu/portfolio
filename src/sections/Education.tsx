@@ -1,4 +1,8 @@
+import { useLanguage } from '../i18n/LanguageContext'
+
 function Education() {
+    const { t } = useLanguage()
+
     return (
         <section
             id="education"
@@ -8,11 +12,11 @@ function Education() {
                 {/* Section heading */}
                 <div className="mb-12">
                     <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-[#a970ff]">
-                        Education
+                        {t.education.label}
                     </p>
 
                     <h2 className="text-3xl font-bold tracking-tight text-[#f5f1fa] sm:text-4xl">
-                        My academic journey
+                        {t.education.title}
                     </h2>
                 </div>
 
@@ -28,24 +32,22 @@ function Education() {
                                 </p>
 
                                 <h3 className="mt-2 text-2xl font-semibold text-[#f5f1fa]">
-                                    Systems Engineering
+                                    {t.education.degree}
                                 </h3>
 
                                 <p className="mt-2 text-sm text-[#aaa2b5]">
-                                    Medellín, Colombia
+                                    {t.education.location}
                                 </p>
                             </div>
 
                             <span className="w-fit rounded-full border border-[#a970ff]/20 bg-[#a970ff]/5 px-3 py-1 text-xs text-[#c99cff]">
-                                Undergraduate
+                                {t.education.level}
                             </span>
                         </div>
 
                         <div className="mt-8 border-t border-white/5 pt-6">
                             <p className="text-sm leading-7 text-[#aaa2b5] sm:text-base">
-                                Currently pursuing a degree in Systems Engineering, with
-                                academic experience across software development, databases,
-                                data analysis, mobile applications, and software architecture.
+                                {t.education.description}
                             </p>
                         </div>
                     </div>
@@ -53,17 +55,11 @@ function Education() {
                     {/* Focus areas */}
                     <div className="space-y-4">
                         <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#aaa2b5]">
-                            Academic focus
+                            {t.education.focus}
                         </p>
 
                         <div className="flex flex-wrap gap-2">
-                            {[
-                                'Software Development',
-                                'Databases',
-                                'Data Analysis',
-                                'Mobile Development',
-                                'Software Architecture',
-                            ].map((area) => (
+                            {t.education.areas.map((area) => (
                                 <span
                                     key={area}
                                     className="rounded-full border border-white/5 bg-[#15111c] px-4 py-2 text-sm text-[#c9c0d1] transition-colors duration-300 hover:border-[#a970ff]/30 hover:text-[#c99cff]"

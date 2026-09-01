@@ -1,4 +1,5 @@
 import type { Project } from '../data/projects'
+import { useLanguage } from '../i18n/LanguageContext'
 
 interface ProjectCardProps extends Project {
     variant?: 'featured' | 'compact'
@@ -14,6 +15,8 @@ function ProjectCard({
     isPrivate,
     variant = 'featured',
 }: ProjectCardProps) {
+    const { language } = useLanguage()
+
     if (variant === 'compact') {
         return (
             <article className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:border-[#a970ff]/40 hover:bg-white/[0.05]">
@@ -25,7 +28,7 @@ function ProjectCard({
                         </h3>
 
                         <p className="mt-2 max-w-3xl text-sm leading-6 text-[#aaa2b5]">
-                            {description}
+                            {description[language]}
                         </p>
 
                         <div className="mt-4 flex flex-wrap gap-2">
@@ -90,7 +93,7 @@ function ProjectCard({
                         </h3>
 
                         <p className="mt-3 max-w-2xl text-sm leading-6 text-[#aaa2b5]">
-                            {description}
+                            {description[language]}
                         </p>
 
                         <div className="mt-5 flex flex-wrap gap-2">

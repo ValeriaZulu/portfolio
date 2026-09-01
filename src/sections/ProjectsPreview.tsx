@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom'
+import { useLanguage } from '../i18n/LanguageContext'
 import ProjectCard from '../components/ProjectCard'
 import { projects } from '../data/projects'
 
 const featuredProjects = projects.filter((project) => project.featured)
 
 function ProjectsPreview() {
+    const { t } = useLanguage()
+
     return (
         <section
             id="projects"
@@ -15,20 +19,20 @@ function ProjectsPreview() {
                 <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
                     <div>
                         <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-[#a970ff]">
-                            Selected work
+                            {t.projects.label}
                         </p>
 
                         <h2 className="text-3xl font-bold tracking-tight text-[#f5f1fa] sm:text-4xl">
-                            Projects I've built
+                            {t.projects.title}
                         </h2>
                     </div>
 
-                    <a
-                        href="/projects"
+                    <Link
+                        to="/projects"
                         className="text-sm font-medium text-[#c99cff] transition-colors hover:text-[#e7d7ff]"
                     >
-                        View all projects ↗
-                    </a>
+                        {t.projects.viewAll}
+                    </Link>
                 </div>
 
                 {/* Projects */}
