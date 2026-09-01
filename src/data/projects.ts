@@ -5,10 +5,10 @@ export interface Project {
     description: string
     technologies: string[]
     image?: string
-    githubUrl: string
+    githubUrl?: string
     demoUrl?: string
     featured: boolean
-    category: 'academic' | 'collaborative' | 'personal'
+    isPrivate?: boolean
 }
 
 export const projects: Project[] = [
@@ -20,7 +20,6 @@ export const projects: Project[] = [
         image: 'src/assets/projects/w8ly.png',
         githubUrl: 'https://github.com/dano796/w8ly',
         featured: true,
-        category: 'collaborative',
     },
 
     {
@@ -31,7 +30,6 @@ export const projects: Project[] = [
         image: 'src/assets/projects/firufinds.png',
         githubUrl: 'https://github.com/Miguearisti14/FiruFinds',
         featured: true,
-        category: 'collaborative',
     },
 
     {
@@ -42,7 +40,6 @@ export const projects: Project[] = [
         image: 'src/assets/projects/mindmaster.png',
         githubUrl: 'https://github.com/ValeriaZulu/MindMaster',
         featured: true,
-        category: 'academic',
     },
 
     {
@@ -53,7 +50,6 @@ export const projects: Project[] = [
         image: 'src/assets/projects/reco-android.png',
         githubUrl: 'https://github.com/SantiagoMartinez22/RecoApp',
         featured: true,
-        category: 'collaborative',
     },
     {
         title: 'RECO',
@@ -62,7 +58,6 @@ export const projects: Project[] = [
         technologies: ['JavaScript', 'SpecKit'],
         githubUrl: 'https://github.com/ValeriaZulu/RECO',
         featured: false,
-        category: 'academic',
     },
 
     {
@@ -72,7 +67,6 @@ export const projects: Project[] = [
         technologies: ['C#', '.NET', 'DDD', 'PostgreSQL', 'Docker'],
         githubUrl: 'https://github.com/ValeriaZulu/RECO-DDD',
         featured: false,
-        category: 'academic',
     },
 
     {
@@ -82,7 +76,6 @@ export const projects: Project[] = [
         technologies: ['C#', '.NET', 'DDD'],
         githubUrl: 'https://github.com/Miguearisti14/AlquilerObjetos_DDD',
         featured: false,
-        category: 'collaborative',
     },
     {
         title: 'Go Travel',
@@ -90,9 +83,7 @@ export const projects: Project[] = [
             'Interactive travel website featuring an image slider, gallery, contact form, language switching, dark mode and client-side authentication.',
         technologies: ['JavaScript', 'HTML', 'CSS', 'esbuild'],
         githubUrl: 'https://github.com/ValeriaZulu/Taller2',
-        demoUrl: 'https://valeriazulu.github.io/Taller2/',
         featured: false,
-        category: 'academic',
     },
 
     {
@@ -100,9 +91,8 @@ export const projects: Project[] = [
         description:
             'Distributed and decentralized file-sharing system using REST and gRPC microservices, with Docker support and fault tolerance.',
         technologies: ['Python', 'REST', 'gRPC', 'Docker', 'Microservices'],
-        githubUrl: 'https://github.com/ValeriaZulu/taller_p2p',
         featured: false,
-        category: 'academic',
+        isPrivate: true,
     },
 
     {
@@ -112,6 +102,5 @@ export const projects: Project[] = [
         technologies: ['C++', 'LoRa', 'GPS', 'IoT'],
         githubUrl: 'https://github.com/ValeriaZulu/IoT_EndDevices',
         featured: false,
-        category: 'academic',
     },
 ]

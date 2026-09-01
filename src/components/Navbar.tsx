@@ -1,43 +1,45 @@
+import { Link } from 'react-router-dom'
+
 function Navbar() {
     return (
         <header className="fixed top-0 left-0 z-50 w-full border-b border-white/5 bg-[#0b0910]/80 backdrop-blur-md">
             <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
 
-                <a
-                    href="#home"
+                <Link
+                    to="/"
                     className="text-lg font-semibold tracking-wide text-[#f5f1fa]"
                 >
                     Valeria Zuluaga Alzate<span className="text-[#a970ff]">.</span>
-                </a>
+                </Link>
 
                 <div className="hidden items-center gap-8 text-sm text-[#aaa2b5] md:flex">
-                    <a
-                        href="#about"
+                    <Link
+                        to="/#about"
                         className="transition-colors duration-300 hover:text-[#c99cff]"
                     >
                         About
-                    </a>
+                    </Link>
 
-                    <a
-                        href="#projects"
+                    <Link
+                        to="/#projects"
                         className="transition-colors duration-300 hover:text-[#c99cff]"
                     >
                         Projects
-                    </a>
+                    </Link>
 
-                    <a
-                        href="#education"
+                    <Link
+                        to="/#education"
                         className="transition-colors duration-300 hover:text-[#c99cff]"
                     >
                         Education
-                    </a>
+                    </Link>
 
-                    <a
-                        href="#contact"
+                    <Link
+                        to="/#contact"
                         className="transition-colors duration-300 hover:text-[#c99cff]"
                     >
                         Contact
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>
