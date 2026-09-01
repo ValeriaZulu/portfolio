@@ -2,7 +2,7 @@ function Education() {
     return (
         <section
             id="education"
-            className="relative px-6 py-5 sm:py-5"
+            className="relative px-6 py-18 sm:py-18"
         >
             <div className="mx-auto max-w-6xl">
                 {/* Section heading */}
