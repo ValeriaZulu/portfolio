@@ -1,11 +1,4 @@
-interface ProjectCardProps {
-    title: string
-    description: string
-    technologies: string[]
-    image?: string
-    githubUrl: string
-    demoUrl?: string
-}
+import type { Project } from '../data/projects'
 
 function ProjectCard({
     title,
@@ -14,7 +7,7 @@ function ProjectCard({
     image,
     githubUrl,
     demoUrl,
-}: ProjectCardProps) {
+}: Project) {
     return (
         <article className="group overflow-hidden rounded-2xl border border-white/5 bg-[#15111c] transition-all duration-500 hover:-translate-y-1 hover:border-[#a970ff]/30 hover:shadow-[0_10px_40px_rgba(169,112,255,0.08)]">
 
