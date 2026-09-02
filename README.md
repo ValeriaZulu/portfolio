@@ -1,75 +1,113 @@
-# React + TypeScript + Vite
+# Valeria Zuluaga — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my academic projects, technical interests, and experience as a Systems Engineering student.
 
-Currently, two official plugins are available:
+🌐 **Live portfolio:** Coming soon
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+I'm Valeria Zuluaga, a Systems Engineering student at Universidad Pontificia Bolivariana.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Throughout my studies, I have explored different areas of software development, including web and mobile applications, databases, data analysis, and software architecture.
 
-## Expanding the ESLint configuration
+This portfolio brings together some of the projects I have worked on during my academic journey.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Featured Projects
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### W8ly
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Offline-first web and mobile application for planning and tracking strength training workouts.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Technologies:** React, TypeScript
 
-```
+[View repository](https://github.com/dano796/w8ly)
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### FiruFinds
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Mobile application for reporting and finding lost pets, developed as an academic project.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Technologies:** React Native, Expo, Supabase
 
-```
+[View repository](https://github.com/Miguearisti14/FiruFinds)
+
+### MindMaster
+
+Interactive trivia game focused on general knowledge, with levels, scoring, and player progression.
+
+**Technologies:** React, TypeScript, Vite
+
+[View repository](https://github.com/ValeriaZulu/MindMaster)
+
+### RECO Android
+
+Native Android application for movie and series recommendations, developed as a new iteration of the RECO project.
+
+**Technologies:** Kotlin, Jetpack Compose
+
+[View repository](https://github.com/SantiagoMartinez22/RecoApp)
+
+## Technologies
+
+### Languages
+
+- Java
+- C#
+- Python
+- JavaScript
+- TypeScript
+- C
+- SQL
+
+### Development
+
+- React
+- React Native
+- Expo
+- Kotlin
+- Jetpack Compose
+- Node.js
+- Vite
+
+### Databases & Data
+
+- PostgreSQL
+- Supabase
+- SQL
+- Data Analysis
+- Machine Learning fundamentals
+
+### Architecture & Tools
+
+- .NET
+- Domain-Driven Design (DDD)
+- REST
+- gRPC
+- Docker
+- Git
+- GitHub
+
+## Education
+
+**Universidad Pontificia Bolivariana (UPB)**  
+Systems Engineering  
+Medellín, Colombia
+
+## Portfolio
+
+This website was built with:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+
+## Contact
+
+- GitHub: [ValeriaZulu](https://github.com/ValeriaZulu)
+- LinkedIn: [Valeria Zuluaga](www.linkedin.com/in/valeria-zulu)
+- CV: Coming soon
+
+---
+
+Built with React, TypeScript & Vite.
