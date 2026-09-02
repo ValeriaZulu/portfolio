@@ -34,7 +34,7 @@ function Contact() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://www.linkedin.com/in/valeria-zulu"
                         target="_blank"
                         rel="noreferrer"
                         className="rounded-full border border-[#a970ff]/30 px-6 py-3 text-sm font-medium text-[#e7d7ff] transition-all duration-300 hover:border-[#a970ff] hover:bg-[#a970ff]/10 hover:text-[#c99cff]"
@@ -43,7 +43,7 @@ function Contact() {
                     </a>
 
                     <a
-                        href="#"
+                        href="https://drive.google.com/file/d/1u7FOWriHRAeHP-zQGHDHSLm28rokNpHq/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                         className="rounded-full border border-[#a970ff]/30 px-6 py-3 text-sm font-medium text-[#e7d7ff] transition-all duration-300 hover:border-[#a970ff] hover:bg-[#a970ff]/10 hover:text-[#c99cff]"
