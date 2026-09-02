@@ -30,7 +30,7 @@ function App() {
   return (
     <LanguageProvider>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <ScrollToHash />
         <Navbar />
 
