@@ -1,4 +1,7 @@
-
+import W8lyImage from '../assets/projects/w8ly.png'
+import FiruFindsImage from '../assets/projects/firufinds.png'
+import MindMasterImage from '../assets/projects/mindmaster.png'
+import RecoAndroidImage from '../assets/projects/reco-android.png'
 
 export interface Project {
     title: string
@@ -22,7 +25,7 @@ export const projects: Project[] = [
             es: 'Aplicación web y móvil offline-first para planificar y hacer seguimiento de rutinas de entrenamiento de fuerza.',
         },
         technologies: ['React', 'TypeScript'],
-        image: 'src/assets/projects/w8ly.png',
+        image: W8lyImage,
         githubUrl: 'https://github.com/dano796/w8ly',
         featured: true,
     },
@@ -34,7 +37,7 @@ export const projects: Project[] = [
             es: 'Aplicación móvil para reportar y encontrar mascotas perdidas, desarrollada como proyecto académico.',
         },
         technologies: ['React Native', 'Expo', 'Supabase'],
-        image: 'src/assets/projects/firufinds.png',
+        image: FiruFindsImage,
         githubUrl: 'https://github.com/Miguearisti14/FiruFinds',
         featured: true,
     },
@@ -46,7 +49,7 @@ export const projects: Project[] = [
             es: 'Juego de trivia interactivo enfocado en conocimiento general, con niveles, puntuación y progreso del jugador.',
         },
         technologies: ['React', 'TypeScript', 'Vite'],
-        image: 'src/assets/projects/mindmaster.png',
+        image: MindMasterImage,
         githubUrl: 'https://github.com/ValeriaZulu/MindMaster',
         featured: true,
     },
@@ -58,7 +61,7 @@ export const projects: Project[] = [
             es: 'Aplicación nativa para Android que recomienda películas y series, desarrollada como una nueva iteración del proyecto RECO.',
         },
         technologies: ['Kotlin', 'Jetpack Compose'],
-        image: 'src/assets/projects/reco-android.png',
+        image: RecoAndroidImage,
         githubUrl: 'https://github.com/SantiagoMartinez22/RecoApp',
         featured: true,
     },
