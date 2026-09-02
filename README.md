@@ -105,7 +105,7 @@ This website was built with:
 ## Contact
 
 - GitHub: [ValeriaZulu](https://github.com/ValeriaZulu)
-- LinkedIn: [Valeria Zuluaga](www.linkedin.com/in/valeria-zulu)
+- LinkedIn: [Valeria Zuluaga](https://www.linkedin.com/in/valeria-zulu)
 - CV: Coming soon
 
 ---
